@@ -1,7 +1,12 @@
 # Hollow Square
 
 # Prompt user to input side lenght
-length = int(input("Enter the side length of the square: "))
+while True:
+    try:
+        length = int(input("Enter the side length of the square: "))
+        break
+    except ValueError:
+        print("Invalid input. Enter an integer")
 
 # Main function
 for i in range (length):
