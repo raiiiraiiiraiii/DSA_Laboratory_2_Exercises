@@ -11,10 +11,16 @@ def calculate_powers(base, exponent):
 while True:
     try:
         base = int(input("Enter base number: "))
+        break
     except ValueError:
         print("Invalid input. Enter an integer.")
-    break
-
+    
 # Input the exponent
-
+while True:
+    try:
+        exponent = int(input("Enter exponent: "))
+        break
+    except ValueError:
+        print("Invalid input. Enter an integer.")
+    
 # Display the result
