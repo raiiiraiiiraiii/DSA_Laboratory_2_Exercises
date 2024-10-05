@@ -1,7 +1,12 @@
 # Inverted Triangle
 
 # Prompt user to input inverted triangle height
-height = int(input("Enter the height of the triangle: "))
+while True:
+    try:
+        height = int(input("\nEnter the height of the triangle: "))
+        break
+    except ValueError:
+        print("Invalid input. Enter an integer.")
 
 # Main program
 for i in range(height, 0, -1):
