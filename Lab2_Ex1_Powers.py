@@ -22,5 +22,6 @@ while True:
         break
     except ValueError:
         print("Invalid input. Enter an integer.")
-    
+
+powers_result = calculate_powers(base, exponent)
 # Display the result
